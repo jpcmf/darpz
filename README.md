@@ -1,4 +1,4 @@
-<p align="center"><img src="src/assets/logo-pradoms.png" alt="Pradom's - Bar & Restaurante" width="350"></p>
+<p align="center"><img src="src/assets/logo-pradoms.png" alt="Pradom's - Bar & Restaurante" width="200"></p>
 
 # Register, Login, Cart, Contact list
 MVP to Pradoms's Restaurant and Bar.
