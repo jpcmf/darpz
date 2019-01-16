@@ -12,7 +12,7 @@ Joao Paulo C. M. Fricks <br />
 jpfricks@gmail.com
 
 ### Tools
-Vue.js 💙 and Bootstrap 4
+Vue.js 💙 , Bootstrap 4, Font Awesome 5
 
 ## Build Setup
 
@@ -33,6 +33,10 @@ npm run build --report
 ## Deploy Stuff
 Every merge within master branch will deploy a new website version - no need to commit /dist/ folder.
 This site is hosted by Netlify - the /dist/ folder is generated automatically on each push.
+
+## Todos
+- PWA
+- Cart
 
 ## License
 
