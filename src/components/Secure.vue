@@ -38,11 +38,13 @@
           </div>
         </div>
         <div class="user-list">
-          <transition-group name="fade" tag="div">
-            <div class="form-group has-search">
-              <span class="fa fa-search form-control-feedback"></span>
-              <input type="text" class="form-control" v-on:input="filter = $event.target.value" placeholder="Filter">
-            </div>
+					<transition name="fade">
+						<div class="form-group has-search">
+							<span class="fa fa-search form-control-feedback"></span>
+							<input type="text" class="form-control" v-on:input="filter = $event.target.value" placeholder="Filter">
+						</div>
+					</transition>
+          <transition-group name="fade">
             <div class="project-item" v-for="(person, index) in contactsFiltered" :key="index">
               <div class="project-item-user">
                 <div class="user-info">
@@ -69,10 +71,10 @@
 <script>
   import db from '../firebaseInit'
   export default {
-    name: 'Secure',
+    name: 'secure',
     metaInfo: {
       title: 'Contact list',
-      titleTemplate: '%s | Compacto Records'
+      titleTemplate: '%s | Pradom\'s - Bar & Restaurante'
     },
     data() {
       return {

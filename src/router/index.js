@@ -6,6 +6,8 @@ import LoginComponent from '@/components/Login'
 import SecureComponent from '@/components/Secure'
 import NewContactComponent from '@/components/NewContact'
 import ViewContactComponent from '@/components/ViewContact'
+import CartComponent from '@/components/Cart'
+import ShoppingCartComponent from '@/components/ShoppingCart'
 
 Vue.use(Router)
 
@@ -15,7 +17,7 @@ export default new Router({
     {
       path: '/',
       redirect: {
-        name: 'register'
+        name: 'login'
       }
     },
     {
@@ -42,6 +44,16 @@ export default new Router({
       path: '/:person/:success?',
       name: 'view-contact',
       component: ViewContactComponent
-    }
+    },
+    {
+      path: '/cart',
+      name: 'cart',
+      component: CartComponent
+    },
+    // {
+    //   path: '/shoppiing-cart',
+    //   name: 'shoppiing-cart',
+    //   component: ShoppingCartComponent
+    // },
   ]
 })

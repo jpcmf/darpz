@@ -9,6 +9,7 @@
             </router-link>
           </div>
           <div class="navbar-end">
+            <router-link to="/cart" class="navbar-item btn btn-sm btn-primary">Cart</router-link>
             <router-link to="/secure" class="navbar-item btn btn-sm btn-primary">Contacts</router-link>
             <router-link to="/add" class="navbar-item btn btn-sm btn-primary">Add contact</router-link>
             <router-link to="/login" class="btn btn-sm btn-secondary" v-on:click.native="logout()" replace>Logout</router-link>
@@ -25,7 +26,7 @@
 
 <script>
   export default {
-    name: 'App',
+    name: 'app',
     data() {
       return {
         authenticated: false,
