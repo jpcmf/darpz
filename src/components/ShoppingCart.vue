@@ -106,7 +106,7 @@ export default {
 
   .f-justify-space {
     justify-content: space-between;
-  }
+	}
 
   .item__enter {
     margin-top: 19px;
