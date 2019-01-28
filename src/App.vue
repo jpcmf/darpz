@@ -4,15 +4,15 @@
         <nav class="navbar">
           <div class="container">
           <div class="navbar-brand">
-            <router-link to="/secure">
+            <router-link to="/cart">
               <img src="./assets/logo-pradoms.png">
             </router-link>
           </div>
           <div class="navbar-end">
-            <router-link to="/cart" class="navbar-item btn btn-sm btn-primary">Cart</router-link>
-            <router-link to="/secure" class="navbar-item btn btn-sm btn-primary">Contacts</router-link>
-            <router-link to="/add" class="navbar-item btn btn-sm btn-primary">Add contact</router-link>
-            <router-link to="/login" class="btn btn-sm btn-secondary" v-on:click.native="logout()" replace>Logout</router-link>
+            <router-link to="/cart" class="navbar-item btn item__btn item__btn--green">Faça seu pedido</router-link>
+            <router-link to="/secure" class="navbar-item btn item__btn item__btn--blue">Contatos</router-link>
+            <router-link to="/add" class="navbar-item btn item__btn item__btn--blue">Adicionar contato</router-link>
+            <router-link v-if="authenticated" to="/login" class="btn btn-secondary" v-on:click.native="logout()" replace>Sair</router-link>
           </div>
         </div>
         </nav>

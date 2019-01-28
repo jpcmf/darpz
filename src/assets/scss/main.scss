@@ -9,10 +9,10 @@ html, body {
 }
 
 body {
-  // background-color: $body-bg;
-  background: $degrade-1;
-  background: -webkit-linear-gradient(to top, $degrade-1, $degrade-2);
-  background: linear-gradient(to top, $degrade-1 0%, $degrade-2 100%);
+  background-color: $body-bg;
+  // background: $degrade-1;
+  // background: -webkit-linear-gradient(to top, $degrade-1, $degrade-2);
+  // background: linear-gradient(to top, $degrade-1 0%, $degrade-2 100%);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,3 +58,44 @@ h1 {
   pointer-events: none;
   color: #aaa;
 }
+
+.main {
+	background-color: $degrade-1;
+}
+
+  .item__btn {
+    // background-color: #54A3FF;
+    border: solid 1px transparent;
+    border-radius: 3px;
+    color: #fff;
+    // display: block;
+    // height: 50px;
+		font-size: 14px;
+		font-weight: 500;
+    // padding: 12.5px 0;
+    text-align: center;
+    // width: 100%;
+		transition: ease-in-out all 300ms;
+
+		&.item__btn--green {
+			background-color: rgb(138, 216, 21);
+
+			&:hover {
+				background-color: transparent;
+				border: solid 1px rgb(138, 216, 21);
+				color: rgb(138, 216, 21) !important;
+			}
+		}
+
+		&.item__btn--blue {
+			background-color: #54A3FF;
+
+			&:hover {
+				background-color: transparent;
+				border: solid 1px #54A3FF;
+				color: #54A3FF !important;
+			}
+		}
+
+    // &:hover {}
+  }

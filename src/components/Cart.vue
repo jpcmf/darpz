@@ -1,11 +1,11 @@
 <template>
-  <div class="cart">
+  <div class="main cart">
 	  <div class="container">
 	    <div class="row">
 		    <div class="col-xs-12 col-lg-9">
 		      <div class="row cart__header">
 			      <div class="col-xs-12 col-sm-6">
-			        <h1>Games</h1>
+			        <h1>Marmitas</h1>
 			      </div>
 			      <div class="col-xs-12 col-sm-6">
 			        <select class="cart__select">
@@ -61,6 +61,7 @@ export default {
   },
   data () {
     return {
+			authenticated: false,
       arrayHidden: ['item'],
       showByIndex: null,
       cartItems: [],
@@ -72,7 +73,7 @@ export default {
           price: 197.88,
           qty: 1,
           score: 100,
-          image: "./static/products/fifa-18.png"
+          image: "./static/products/marmitex01.jpg"
         },
         {
           id: 201,
@@ -80,7 +81,7 @@ export default {
           price: 49.99,
           qty: 1,
           score: 80,
-          image: "./static/products/fifa-18.png"
+          image: "./static/products/marmitex02.jpg"
         },
         {
           id: 102,
@@ -88,7 +89,7 @@ export default {
           price: 119.5,
           qty: 1,
           score: 250,
-          image: "./static/products/fifa-18.png"
+          image: "./static/products/marmitex03.jpg"
         },
         {
           id: 99,
@@ -96,7 +97,7 @@ export default {
           price: 249.99,
           qty: 1,
           score: 205,
-          image: "./static/products/fifa-18.png"
+          image: "./static/products/marmitex03.jpg"
         },
         {
           id: 12,
@@ -104,7 +105,7 @@ export default {
           price: 69.99,
           qty: 1,
           score: 150,
-          image: "./static/products/fifa-18.png"
+          image: "./static/products/marmitex02.jpg"
         },
         {
           id: 74,
@@ -112,7 +113,7 @@ export default {
           price: 71.94,
           qty: 1,
           score: 400,
-          image: "./static/products/fifa-18.png"
+          image: "./static/products/marmitex01.jpg"
         },
         {
           id: 31,
@@ -120,7 +121,7 @@ export default {
           price: 79.99,
           qty: 1,
           score: 50,
-          image: "./static/products/fifa-18.png"
+          image: "./static/products/marmitex03.jpg"
         },
         {
           id: 420,
@@ -128,7 +129,7 @@ export default {
           price: 195.39,
           qty: 1,
           score: 325,
-          image: "./static/products/fifa-18.png"
+          image: "./static/products/marmitex02.jpg"
         },
         {
           id: 501,
@@ -136,7 +137,7 @@ export default {
           price: 115.8,
           qty: 1,
           score: 290,
-          image: "./static/products/fifa-18.png"
+          image: "./static/products/marmitex01.jpg"
         }
       ],
     }
@@ -190,8 +191,8 @@ export default {
 
 <style lang="scss" scoped>
   .cart {
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    // background-color: #fff;
+    // font-family: 'Open Sans', sans-serif;
     letter-spacing: 0;
     padding: 50px 0;
 

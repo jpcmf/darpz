@@ -7,7 +7,7 @@ import SecureComponent from '@/components/Secure'
 import NewContactComponent from '@/components/NewContact'
 import ViewContactComponent from '@/components/ViewContact'
 import CartComponent from '@/components/Cart'
-import ShoppingCartComponent from '@/components/ShoppingCart'
+// import ShoppingCartComponent from '@/components/ShoppingCart'
 
 Vue.use(Router)
 
@@ -41,7 +41,7 @@ export default new Router({
       component: NewContactComponent
     },
     {
-      path: '/:person/:success?',
+      path: '/contact/:person',
       name: 'view-contact',
       component: ViewContactComponent
     },
