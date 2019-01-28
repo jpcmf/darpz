@@ -69,27 +69,27 @@ export default {
       [
         {
           id: 312,
-          name: "Super Mario Odyssey",
-          price: 197.88,
+          name: "Marmitex Simples do dia - Pequena",
+          price: 11.50,
           qty: 1,
           score: 100,
           image: "./static/products/marmitex01.jpg"
         },
         {
           id: 201,
-          name: "Call Of Duty Infinite Warfare",
-          price: 49.99,
+          name: "Marmitex Simples do dia - Média",
+          price: 12.50,
           qty: 1,
           score: 80,
-          image: "./static/products/marmitex02.jpg"
+          image: "./static/products/marmitex01.jpg"
         },
         {
           id: 102,
-          name: "The Witcher III Wild Hunt",
-          price: 119.5,
+          name: "Marmitex Simples do dia - Grande",
+          price: 13.50,
           qty: 1,
           score: 250,
-          image: "./static/products/marmitex03.jpg"
+          image: "./static/products/marmitex01.jpg"
         },
         {
           id: 99,
@@ -203,9 +203,9 @@ export default {
     }
 
     h1 {
-      color: #363636;
-      font-size: 48px;
-      font-weight: 600;
+      // color: #363636;
+      // font-size: 48px;
+      // font-weight: 600;
       margin: 0;
     }
 
@@ -307,6 +307,7 @@ export default {
   }
 
   .item {
+		background-color: #fff;
     border: solid 1px #E1E1E1;
     border-radius: 2px;
     color: #000;
