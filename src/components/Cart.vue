@@ -23,14 +23,15 @@
                   <h5>{{ item.name }}</h5>
                   <h6>R${{ item.price | formatCurrency }}</h6>
                 </div>
-                <transition name="fade">
-                  <div class="cart__buy" v-show="showByIndex === item">
+                <!-- <transition name="fade"> -->
+                  <!-- <div class="cart__buy" v-show="showByIndex === item"> -->
+                  <div class="cart__buy">
                     <!-- <input v-model="item.qty" type="number" class="form-control" placeholder="Qty" min="1"> -->
                     <a href="" v-on:click.prevent="addToCart(item)" class="btn cart__btn-add">
-                      <span>adicionar ao carrinho</span>
+                      <span>Comprar</span>
                     </a>
                   </div>
-                </transition>
+                <!-- </transition> -->
               </div>
             </div>
           </div>
@@ -69,27 +70,27 @@ export default {
       [
         {
           id: 312,
-          name: "Super Mario Odyssey",
-          price: 197.88,
+          name: "Marmitex Simples do dia - Pequena",
+          price: 11.50,
           qty: 1,
           score: 100,
           image: "./static/products/marmitex01.jpg"
         },
         {
           id: 201,
-          name: "Call Of Duty Infinite Warfare",
-          price: 49.99,
+          name: "Marmitex Simples do dia - Média",
+          price: 12.50,
           qty: 1,
           score: 80,
-          image: "./static/products/marmitex02.jpg"
+          image: "./static/products/marmitex01.jpg"
         },
         {
           id: 102,
-          name: "The Witcher III Wild Hunt",
-          price: 119.5,
+          name: "Marmitex Simples do dia - Grande",
+          price: 13.50,
           qty: 1,
           score: 250,
-          image: "./static/products/marmitex03.jpg"
+          image: "./static/products/marmitex01.jpg"
         },
         {
           id: 99,
@@ -105,7 +106,7 @@ export default {
           price: 69.99,
           qty: 1,
           score: 150,
-          image: "./static/products/marmitex02.jpg"
+          image: "./static/products/marmitex03.jpg"
         },
         {
           id: 74,
@@ -113,7 +114,7 @@ export default {
           price: 71.94,
           qty: 1,
           score: 400,
-          image: "./static/products/marmitex01.jpg"
+          image: "./static/products/marmitex03.jpg"
         },
         {
           id: 31,
@@ -121,7 +122,7 @@ export default {
           price: 79.99,
           qty: 1,
           score: 50,
-          image: "./static/products/marmitex03.jpg"
+          image: "./static/products/marmitex02.jpg"
         },
         {
           id: 420,
@@ -137,7 +138,7 @@ export default {
           price: 115.8,
           qty: 1,
           score: 290,
-          image: "./static/products/marmitex01.jpg"
+          image: "./static/products/marmitex02.jpg"
         }
       ],
     }
@@ -203,9 +204,9 @@ export default {
     }
 
     h1 {
-      color: #363636;
-      font-size: 48px;
-      font-weight: 600;
+      // color: #363636;
+      // font-size: 48px;
+      // font-weight: 600;
       margin: 0;
     }
 
@@ -247,7 +248,8 @@ export default {
     }
 
     .cart__description {
-      margin-top: 10px;
+			margin-top: 10px;
+			min-height: 60px;
       text-align: center;
 
       h5, h6 {
@@ -267,25 +269,26 @@ export default {
     }
 
     .cart__buy {
-      background-color: #fff;
-      bottom: 0;
+			// bottom: 0;
       height: 52px;
       padding-top: 10px;
-      position: absolute;
+      // position: absolute;
       text-align: center;
-      width: 100%;
 
       .cart__btn-add {
-        border: 0;
-        color:#3487DC;
-        height: auto;
+				background-color:#dd1813;
+				border: 0;
+				color:#fff;
+				display: inline-block;
+        // height: auto;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 500;
         letter-spacing: 0;
         line-height: 16px;
-        padding: 0;
+        padding: 10px;
         vertical-align: middle;
         text-transform: lowercase;
+      	width: 100%;
 
         span {
           display: inline-block;
@@ -300,13 +303,14 @@ export default {
         &:hover {
           border: 0;
           box-shadow: none;
-          color:#3487DC !important;
+          color:#fff !important;
         }
       }
     }
   }
 
   .item {
+		background-color: #fff;
     border: solid 1px #E1E1E1;
     border-radius: 2px;
     color: #000;
