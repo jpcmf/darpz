@@ -55,7 +55,7 @@
 
 <script>
   export default {
-    name: 'Login',
+    name: 'register',
     metaInfo: {
       title: 'Bem vindo - Cadastre-se',
       titleTemplate: '%s | Pradom\'s - Bar & Restaurante'

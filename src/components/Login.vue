@@ -33,7 +33,7 @@
 
 <script>
   export default {
-    name: 'Login',
+    name: 'login',
     metaInfo: {
       title: 'Bem vindo - Login',
       titleTemplate: '%s | Pradom\'s - Bar & Restaurante'
@@ -49,17 +49,17 @@
     },
     methods: {
       login() {
-        if(this.input.username != "" && this.input.password != "") {
+        if(this.input.username != '' && this.input.password != '') {
           if(this.input.username == this.$parent.mockAccount.username && this.input.password == this.$parent.mockAccount.password) {
-            this.$emit("authenticated", true);
-            this.$router.replace({ name: "secure" });
+            this.$emit('authenticated', true);
+            this.$router.replace({ name: 'cart' });
           } else {
             this.error = 'E-mail ou senha incorreta'
-            console.log("The username and / or password is incorrect");
+            console.log('The username and / or password is incorrect');
           }
         } else {
           this.error = 'Digite um e-mail e senha válidos'
-          console.log("A username and password must be present");
+          console.log('A username and password must be present');
         }
       },
       clearError() {
